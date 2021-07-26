@@ -1,0 +1,15 @@
+<div class="container mt-5"> 
+    <div class="div text-center">   
+        <button class="btn btn-primary btn-lg mr-2" (click)="getQuote()">Cotizar</button>
+    </div>
+    <div class="div text-center">
+        <h3>
+            <!-- aaa -->
+          Cotización Dolar: Venta: {{quoteDolar.salePrice}}, Compra: {{quoteDolar.buyPrice}} - {{quoteDolar.timeInfo}} 
+          <hr>
+          Cotización Real: Venta: {{quoteReal.salePrice}}, Compra: {{quoteReal.buyPrice}} - {{quoteReal.timeInfo}} 
+          <hr>
+          <hr>
+        </h3>
+     </div>
+</div>

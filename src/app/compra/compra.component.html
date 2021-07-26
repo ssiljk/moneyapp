@@ -1,0 +1,40 @@
+<div class="div container"> 
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+
+        <div>
+            <label for="usuario">
+              Usuario
+            </label>
+            <input id="usuario" type="text" formControlName="usuario">
+          </div>
+        
+          <div>
+            <label for="cantidad">
+              Cantidad a Invertir (Pesos Argentinos)
+            </label>
+            <input id="cantidad" type="text" formControlName="cantidad">
+          </div>
+
+          <div>
+            <label for="moneda">
+              Moneda
+            </label>
+            <input id="moneda" type="text" formControlName="moneda">
+          </div>
+          <div class="div text-center">   
+            <button class="btn btn-success btn-lg mr-2" type="submit">Comprar</button>
+        </div>
+      
+      </form>
+</div>
+<div class="container mt-5"> 
+    
+    <div class="div text-center">
+        <h5>
+            <!-- aaa -->
+          Resultado Compra: Usuario: {{transaction.userId}}  Monto Adquirido: {{transaction.amount}} Moneda: {{transaction.currencyName}} Hora: {{transaction.transactionDate}}
+          <hr>
+         
+        </h5>
+    </div>
+</div>
